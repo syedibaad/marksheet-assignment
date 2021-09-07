@@ -1,0 +1,57 @@
+void main() { 
+  String a = "MARK SHEET";
+  var name = 'SYED IBAAD MUSHARRAF';
+  var id = 'BSCS/F15';
+  var subject2_marks =  14;
+  var subject1_marks1 =  100;
+  var subject3_marks =  60;
+  var subject4_marks =  70;
+  var subject5_marks =  80;
+  var subject6_marks =  50;
+  var total = 600;
+  var sub1= 'phy';
+  var sub2= 'chem';  
+  var sub3= 'comp';
+  var sub4= 'science';  
+  var sub5= 'pst';
+  var sub6= 'urdu';  
+  var perc = ((subject1_marks1+subject2_marks+subject3_marks+subject4_marks+subject5_marks+subject6_marks)/total)*100;
+  // var marks21 = marks.round(); for round
+  //var r_per= perc.toStringAsFixed(2);
+  print (a);
+  print ('NAME IS: ${name}');
+  print ('ROLL NO IS: ${id}');
+  print('${sub1}: ${subject1_marks1}');
+  print('${sub2}: ${subject2_marks}');
+  print('${sub3}: ${subject3_marks}');
+  print('${sub4}: ${subject4_marks}');
+  print('${sub5}: ${subject5_marks}');
+  print('${sub6}: ${subject6_marks}');
+  print(perc);
+  if (perc >= 80)
+  {
+    print('A+');
+  }
+  else if (perc >= 70 && perc < 80)
+  {
+    print('A');
+  }
+    else if (perc >= 60 && perc < 70)
+  {
+    print('B');
+  }
+    else if (perc >= 50 && perc < 60)
+  {
+    print('C');
+  }
+    else if (perc >= 40 && perc < 50)
+  {
+    print('D');
+  }
+  else 
+  {
+    print('Fail');
+  }
+  
+
+}
